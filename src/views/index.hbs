@@ -4,7 +4,24 @@
             <h1>Tasks</h1>
         </div>
         <div class="card-body">
-           
+           {{#if contacts}}
+               <ul class="list-group">
+                    {{#each contacts}}
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            {{firstname}} 
+                            {{lastname}} /
+                            {{email}} /
+                            {{phone}}
+                            <a href="/delete-contact/{{@key}}" class="btn btn-danger">
+                                Delete
+                            </a>
+                        </li>
+                        
+                    {{/each}}
+               </ul>
+            {{else}}
+            <p>No contacts Yet.</p>
+           {{/if}}
         </div>
         <div class="card-footer">
             <form action="/new-contact" method="POST">

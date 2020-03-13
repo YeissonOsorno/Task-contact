@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "firebase con node js conexoin, app de contactos",
   "main": "index.js",
-  "scripts": {    
-    "dev":"nodemon src/index.js"
+  "scripts": {
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "firebase",
