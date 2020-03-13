@@ -1,0 +1,24 @@
+{
+  "name": "firebase-node-example",
+  "version": "1.0.0",
+  "description": "firebase con node js conexoin, app de contactos",
+  "main": "index.js",
+  "scripts": {    
+    "dev":"nodemon src/index.js"
+  },
+  "keywords": [
+    "firebase",
+    "js",
+    "node",
+    "js"
+  ],
+  "author": "Yeisson Osorno",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "firebase-admin": "^8.10.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  }
+}
